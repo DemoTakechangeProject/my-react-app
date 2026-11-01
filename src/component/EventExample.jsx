@@ -51,36 +51,36 @@
 // }
 // export default EventExample
 
-import { useState } from "react"
-const EventExample=()=>{
+// import { useState } from "react"
+// const EventExample=()=>{
 
-    const [count,setCount] = useState(0);
+//     const [count,setCount] = useState(0);
 
-    const increment = () =>{
-       setCount(count+1)
-    }
-    const decrement = () =>{
-       setCount(count-1)
-    }
-    return(
-        <>
-           <h1>{count}</h1>
+//     const increment = () =>{
+//        setCount(count+1)
+//     }
+//     const decrement = () =>{
+//        setCount(count-1)
+//     }
+//     return(
+//         <>
+//            <h1>{count}</h1>
 
-           <button
-             onClick={increment}
-           >
-            +
-           </button>
+//            <button
+//              onClick={increment}
+//            >
+//             +
+//            </button>
 
-            <button
-             onClick={decrement}
-           >
-            -
-           </button>
-        </>
-    )
-}
-export default EventExample
+//             <button
+//              onClick={decrement}
+//            >
+//             -
+//            </button>
+//         </>
+//     )
+// }
+// export default EventExample
 
 // State Example
 
@@ -104,3 +104,71 @@ export default EventExample
 // }
 
 // export default EventExample
+
+// import { useState } from "react"
+// import ControlPointIcon from '@mui/icons-material/ControlPoint';
+// import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
+
+// import {ControlPoint,RemoveCircle} from '@mui/icons-material';
+
+// const EventExample=()=>{
+
+//     const [count,setCount] = useState(0);
+
+//     const increment = () =>{
+//        setCount(count+1)
+//     }
+//     const decrement = () =>{
+//        setCount(count-1)
+//     }
+//     return(
+//         <>
+//            <h1>{count}</h1>
+
+//            {/* <ControlPointIcon onClick={increment}/>
+//            <RemoveCircleIcon onClick={decrement}/> */}
+
+//            <ControlPoint onClick={increment}/>
+//            <RemoveCircle onClick={decrement}/>
+//         </>
+//     )
+// }
+// export default EventExample
+
+import { useState } from "react"
+import { ControlPoint, RemoveCircle, RestartAlt, Undo } from '@mui/icons-material';
+
+const EventExample = () => {
+
+   const [count, setCount] = useState(0);
+   const [restore,setRestore] = useState(0);
+
+   const increment = () => {
+      if (count < 10) {
+         setCount(count + 1)
+         setRestore(count);
+      }
+   }
+   const decrement = () => {
+      if (count > 0) {
+         setCount(count - 1)
+         setRestore(count);
+      }
+   }
+   const resetCounter= () =>{
+      setCount(0);
+   }
+   const undoValue=()=>{
+      setCount(restore)
+   }
+   return (
+      <>
+         <h1>{count}</h1>
+         <ControlPoint onClick={increment} />
+         <RemoveCircle onClick={decrement} />
+         <RestartAlt onClick={resetCounter}/>
+         <Undo onClick={undoValue}/>
+        </>
+   )
+}
+export default EventExample
