@@ -1,9 +1,14 @@
-import EventExample from "../component/EventExample"
+// import EventExample from "../component/EventExample"
+// import OnChangeExample from "../component/OnChangeExample"
+
+import ConditionalRendering from "../component/ConditionalRendering"
 
 const App=()=>{
 
   return(
-      <EventExample/>
+      // <EventExample/>
+      // <OnChangeExample/>
+      <ConditionalRendering/>
   )
 }
 
