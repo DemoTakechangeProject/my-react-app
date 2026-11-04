@@ -1,14 +1,17 @@
 // import EventExample from "../component/EventExample"
-// import OnChangeExample from "../component/OnChangeExample"
+import OnChangeExample from "../component/OnChangeExample"
 
-import ConditionalRendering from "../component/ConditionalRendering"
+// import StateExample from "../component/StateExample"
+
+// import ConditionalRendering from "../component/ConditionalRendering"
 
 const App=()=>{
 
   return(
       // <EventExample/>
-      // <OnChangeExample/>
-      <ConditionalRendering/>
+      <OnChangeExample/>
+      // <ConditionalRendering/>
+      // <StateExample/>
   )
 }
 
