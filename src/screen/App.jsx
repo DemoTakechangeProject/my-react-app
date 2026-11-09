@@ -1,5 +1,9 @@
 // import EventExample from "../component/EventExample"
-import OnChangeExample from "../component/OnChangeExample"
+// import OnChangeExample from "../component/OnChangeExample"
+
+import AutoCompleteComponent from "../component/AutoCompleteComponent"
+
+// import CssExample from "../component/CssExample"
 
 // import StateExample from "../component/StateExample"
 
@@ -9,9 +13,11 @@ const App=()=>{
 
   return(
       // <EventExample/>
-      <OnChangeExample/>
+      // <OnChangeExample/>
       // <ConditionalRendering/>
       // <StateExample/>
+      // <CssExample/>
+      <AutoCompleteComponent/>
   )
 }
 
