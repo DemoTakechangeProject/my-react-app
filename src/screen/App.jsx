@@ -1,13 +1,17 @@
 // import EventExample from "../component/EventExample"
 // import OnChangeExample from "../component/OnChangeExample"
 
-import AutoCompleteComponent from "../component/AutoCompleteComponent"
+import RegistrationScreen from "./RegistrationScreen"
+
+// import AutoCompleteComponent from "../component/AutoCompleteComponent"
 
 // import CssExample from "../component/CssExample"
 
 // import StateExample from "../component/StateExample"
 
 // import ConditionalRendering from "../component/ConditionalRendering"
+// import ButtonComponent from "../component/ButtonComponent"
+import LoginScreen from "./LoginScreen"
 
 const App=()=>{
 
@@ -17,7 +21,10 @@ const App=()=>{
       // <ConditionalRendering/>
       // <StateExample/>
       // <CssExample/>
-      <AutoCompleteComponent/>
+      // <AutoCompleteComponent/>
+      // <ButtonComponent></ButtonComponent>
+      <LoginScreen/>
+      // <RegistrationScreen/>
   )
 }
 
