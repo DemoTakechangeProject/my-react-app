@@ -13,6 +13,7 @@ import RegistrationScreen from "./RegistrationScreen"
 // import ButtonComponent from "../component/ButtonComponent"
 import LoginScreen from "./LoginScreen"
 import RadioButtonComponent from "../component/RadioButtonComponent"
+import CheckBoxComponent from "../component/CheckBoxComponent"
 
 const App=()=>{
 
@@ -26,7 +27,8 @@ const App=()=>{
       // <ButtonComponent></ButtonComponent>
       // <LoginScreen/>
       // <RegistrationScreen/>
-      <RadioButtonComponent/>
+      // <RadioButtonComponent/>
+      <CheckBoxComponent/>
   )
 }
 
