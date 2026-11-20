@@ -14,6 +14,7 @@ import RegistrationScreen from "./RegistrationScreen"
 import LoginScreen from "./LoginScreen"
 import RadioButtonComponent from "../component/RadioButtonComponent"
 import CheckBoxComponent from "../component/CheckBoxComponent"
+import TableComponent from "../component/TableComponent"
 
 const App=()=>{
 
@@ -28,7 +29,8 @@ const App=()=>{
       // <LoginScreen/>
       // <RegistrationScreen/>
       // <RadioButtonComponent/>
-      <CheckBoxComponent/>
+      // <CheckBoxComponent/>
+      <TableComponent/>
   )
 }
 
